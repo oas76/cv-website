@@ -70,36 +70,36 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
     z-index: 1;
 }
 
 .profile-image-wrapper {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
 .profile-image {
-    width: 100%;
+    width: auto;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: left center;
     mask-image: linear-gradient(to right, 
                                 black 0%, 
-                                black 25%,
-                                rgba(0, 0, 0, 0.7) 35%,
-                                rgba(0, 0, 0, 0.4) 45%,
-                                rgba(0, 0, 0, 0.1) 55%,
-                                transparent 65%);
+                                black 30%,
+                                rgba(0, 0, 0, 0.7) 45%,
+                                rgba(0, 0, 0, 0.4) 60%,
+                                rgba(0, 0, 0, 0.1) 75%,
+                                transparent 90%);
     -webkit-mask-image: linear-gradient(to right, 
                                         black 0%, 
-                                        black 25%,
-                                        rgba(0, 0, 0, 0.7) 35%,
-                                        rgba(0, 0, 0, 0.4) 45%,
-                                        rgba(0, 0, 0, 0.1) 55%,
-                                        transparent 65%);
+                                        black 30%,
+                                        rgba(0, 0, 0, 0.7) 45%,
+                                        rgba(0, 0, 0, 0.4) 60%,
+                                        rgba(0, 0, 0, 0.1) 75%,
+                                        transparent 90%);
     mix-blend-mode: luminosity;
     opacity: 0.6;
 }
@@ -383,6 +383,11 @@ footer {
     .hero-text {
         text-align: center;
         max-width: 100%;
+    }
+
+    .profile-section {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .profile-image {
