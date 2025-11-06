@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Printable CV - Odd Arild Skaflestad - Director of Product Management @ Cisco">
+    <title>Odd Arild Skaflestad - CV (Printable)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+            padding: 0;
+            font-size: 11pt;
+        }
+
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+        }
+
+        .no-print {
+            background: #f0f0f0;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        .print-button {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-right: 1rem;
+        }
+
+        .print-button:hover {
+            background: #0052a3;
+        }
+
+        .back-button {
+            background: #666;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background: #555;
+        }
+
+        header {
+            border-bottom: 3px solid #000;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .title {
+            font-size: 13pt;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            color: #333;
+            margin-top: 0.5rem;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 14pt;
+            font-weight: bold;
+            border-bottom: 2px solid #333;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.25rem;
+        }
+
+        .summary {
+            margin-bottom: 1.5rem;
+        }
+
+        .summary p {
+            margin-bottom: 0.5rem;
+            text-align: justify;
+        }
+
+        .skills {
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-item {
+            background: #f0f0f0;
+            padding: 0.25rem 0.5rem;
+            border: 1px solid #ccc;
+            font-size: 9pt;
+        }
+
+        .experience-item {
+            margin-bottom: 1.5rem;
+            page-break-inside: avoid;
+        }
+
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .company {
+            font-size: 13pt;
+            font-weight: bold;
+        }
+
+        .duration {
+            font-size: 9pt;
+            color: #666;
+            font-style: italic;
+        }
+
+        .position {
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            page-break-inside: avoid;
+        }
+
+        .position-title {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .position-date {
+            font-size: 9pt;
+            color: #666;
+            margin-bottom: 0.25rem;
+        }
+
+        .position-description {
+            margin-left: 1.5rem;
+            margin-top: 0.25rem;
+        }
+
+        .position-description li {
+            margin-bottom: 0.25rem;
+            font-size: 10pt;
+        }
+
+        .education-item {
+            margin-bottom: 1rem;
+            page-break-inside: avoid;
+        }
+
+        .edu-school {
+            font-size: 11pt;
+            font-weight: bold;
+        }
+
+        .edu-degree {
+            font-size: 10pt;
+            color: #333;
+        }
+
+        .edu-date {
+            font-size: 9pt;
+            color: #666;
+            font-style: italic;
+        }
+
+        .patent-section {
+            margin-bottom: 1rem;
+        }
+
+        .patent-title {
+            font-size: 10pt;
+            font-weight: bold;
+        }
+
+        .patent-number {
+            font-size: 9pt;
+            color: #666;
+            font-family: 'Courier New', monospace;
+        }
+
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+        }
+
+        .language-item {
+            font-size: 10pt;
+        }
+
+        .language-name {
+            font-weight: bold;
+        }
+
+        .language-level {
+            color: #666;
+            font-size: 9pt;
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #ccc;
+            text-align: center;
+            font-size: 9pt;
+            color: #666;
+        }
+
+        @media print {
+            .no-print {
+                display: none;
+            }
+
+            body {
+                padding: 0;
+            }
+
+            .container {
+                padding: 0;
+            }
+
+            h2 {
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print">
+        <button onclick="window.print()" class="print-button">🖨️ Print / Save as PDF</button>
+        <a href="index.html" class="back-button">← Back to Website</a>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Odd Arild Skaflestad</h1>
+            <p class="title">Director of Product Management @ Cisco</p>
+            <div class="contact-info">
+                Oslo, Norway | 
+                <a href="mailto:odd_arild@skaflestad.no">odd_arild@skaflestad.no</a> | 
+                <a href="https://www.linkedin.com/in/oskaflestad">linkedin.com/in/oskaflestad</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="summary">
+                <h2>Professional Summary</h2>
+                <p>Accomplished engineering and product management leader with over 20 years of experience in video conferencing, unified communications, and cloud services. Proven track record of building and leading high-performing teams using agile methodologies, with a strong focus on continuous improvement through retrospectives and data-driven decision making.</p>
+                <p>Expert in driving organizational change and innovation, successfully navigating major transitions including Cisco's acquisition of TANDBERG. Passionate about developing talent and fostering engineering excellence through DevOps practices, continuous deployment, and modern development methodologies.</p>
+                <p>Technology enthusiast with hands-on programming experience in JavaScript and Python. Thrives on challenges and continuous learning, both professionally and personally. Based in Oslo, proud father of three, and devoted husband to Tina.</p>
+            </section>
+
+            <section class="skills">
+                <h2>Core Competencies</h2>
+                <div class="skills-list">
+                    <span class="skill-item">Product Management</span>
+                    <span class="skill-item">Engineering Leadership</span>
+                    <span class="skill-item">Team Building & Development</span>
+                    <span class="skill-item">Agile & Scrum</span>
+                    <span class="skill-item">DevOps & CI/CD</span>
+                    <span class="skill-item">Cloud Architecture</span>
+                    <span class="skill-item">Microservices</span>
+                    <span class="skill-item">Video Conferencing Solutions</span>
+                    <span class="skill-item">Unified Communications</span>
+                    <span class="skill-item">API Design & Integration</span>
+                    <span class="skill-item">Strategic Planning</span>
+                    <span class="skill-item">Change Management</span>
+                    <span class="skill-item">Customer Success</span>
+                    <span class="skill-item">Innovation Management</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Professional Experience</h2>
+
+                <div class="experience-item">
+                    <div class="company-header">
+                        <span class="company">Cisco</span>
+                        <span class="duration">15 years 7 months</span>
+                    </div>
+
+                    <div class="position">
+                        <div class="position-title">Director of Product Management</div>
+                        <div class="position-date">March 2021 - Present (4 years 8 months) | Oslo, Norway</div>
+                        <ul class="position-description">
+                            <li>Lead global product strategy for Webex Devices management, integration capabilities, and cloud services tier, overseeing a multi-million dollar product portfolio</li>
+                            <li>Own and prioritize product backlog based on customer feedback, market opportunities, and strategic business objectives, ensuring alignment with company vision</li>
+                            <li>Drive organizational transformation toward outcome-based goals and measurable KPIs, implementing data-driven decision-making processes</li>
+                            <li>Collaborate with cross-functional teams across multiple geographies to deliver innovative features and maintain competitive advantage</li>
+                        </ul>
+                    </div>
+
+                    <div class="position">
+                        <div class="position-title">Director Software Engineering</div>
+                        <div class="position-date">January 2020 - March 2021 (1 year 3 months) | Oslo, Norway</div>
+                        <ul class="position-description">
+                            <li>Built and led a full-stack microservices team of 20+ engineers on the Cisco Webex platform, located in Oslo</li>
+                            <li>Established world-class DevOps culture with continuous deployment pipeline, reducing release cycles from months to days</li>
+                            <li>Architected and scaled cloud infrastructure to handle billions of daily requests with 99.99% uptime SLA</li>
+                            <li>Mentored engineering managers and senior developers, fostering technical excellence and career growth</li>
+                        </ul>
+                    </div>
+
+                    <div class="position">
+                        <div class="position-title">Manager Engineering CTG/CVTG</div>
+                        <div class="position-date">August 2016 - January 2020 (3 years 6 months) | Oslo, Norway</div>
+                        <ul class="position-description">
+                            <li>Managed full-stack microservices team delivering cloud requirements for Cisco Collaboration video endpoints on the Webex platform</li>
+                            <li>Implemented agile methodologies and continuous deployment practices, significantly improving team velocity and code quality</li>
+                            <li>Drove technical innovation and architectural decisions for cloud-native solutions serving millions of users globally</li>
+                        </ul>
+                    </div>
+
+                    <div class="position">
+                        <div class="position-title">Manager Engineering CTG/CETG</div>
+                        <div class="position-date">March 2013 - August 2016 (3 years 6 months) | Oslo, Norway</div>
+                        <ul class="position-description">
+                            <li>Led TelePresence team's strategic transition into Cisco Spark (now Webex), successfully pivoting team focus to cloud-first architecture</li>
+                            <li>Designed and implemented RESTful APIs and multi-device features, enabling seamless user experience across platforms</li>
+                            <li>Grew team's cloud computing and iOS development capabilities, delivering multiple client applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="position">
+                        <div class="position-title">Manager Engineering (Multiple Roles)</div>
+                        <div class="position-date">April 2010 - March 2013 (2 years 11 months) | Oslo, Norway</div>
+                        <ul class="position-description">
+                            <li>Managed software engineering for Collaboration endpoint products, including Android, Cloud, and BYOD initiatives</li>
+                            <li>Successfully navigated team through Cisco's acquisition of TANDBERG, maintaining productivity and morale during organizational change</li>
+                            <li>Championed adoption of Agile and Scrum methodologies, transforming team culture and delivery processes</li>
+                            <li>Delivered multiple product releases including Movi3, Movi4, and Jabber Video client applications</li>
+                            <li>Launched public beta of TelePresence video service for PC, Mac, and iPad, expanding market reach</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="company-header">
+                        <span class="company">TANDBERG</span>
+                        <span class="duration">7 years 7 months</span>
+                    </div>
+
+                    <div class="position">
+                        <div class="position-title">R&D Manager/Director, SW Clients</div>
+                        <div class="position-date">April 2007 - April 2010 (3 years 1 month)</div>
+                        <ul class="position-description">
+                            <li>Led TANDBERG's soft client product strategy and R&D initiatives, managing cross-functional teams of up to 25 engineers and designers</li>
+                            <li>Pivoted product strategy and successfully launched Movi2 in summer 2009, establishing TANDBERG as a leader in software-based video conferencing</li>
+                            <li>Responsible for hiring, team development, and establishing engineering best practices across the organization</li>
+                        </ul>
+                    </div>
+
+                    <div class="position">
+                        <div class="position-title">Senior Product Specialist</div>
+                        <div class="position-date">August 2006 - March 2007 (8 months)</div>
+                        <ul class="position-description">
+                            <li>Expatriate assignment supporting TANDBERG's Asia Pacific sales organization, based in the region</li>
+                            <li>Delivered technical training and enablement to local sales and support teams on MXP and MPS product lines</li>
+                            <li>Gained valuable insights into sales processes, customer requirements, and market dynamics in APAC region</li>
+                        </ul>
+                    </div>
+
+                    <div class="position">
+                        <div class="position-title">Project Manager</div>
+                        <div class="position-date">October 2004 - August 2006 (1 year 11 months)</div>
+                        <ul class="position-description">
+                            <li>Managed complex embedded systems project featuring multi-DSP and multi-OS architecture with multi-protocol support (IP, ISDN, V.35, Leased Line)</li>
+                            <li>Delivered TANDBERG MPS in 2005—the industry's first TelePresence MCU supporting HD video resolution, establishing new market standards</li>
+                            <li>Coordinated cross-functional teams including hardware, firmware, and software engineers to meet aggressive deadlines</li>
+                        </ul>
+                    </div>
+
+                    <div class="position">
+                        <div class="position-title">Software Engineer</div>
+                        <div class="position-date">October 2002 - October 2004 (2 years 1 month)</div>
+                        <ul class="position-description">
+                            <li>Contributed to system architecture and C programming for TANDBERG's next-generation video conferencing platform</li>
+                            <li>Core developer for TANDBERG MXP series TelePresence codecs, which became highly successful product line</li>
+                            <li>Collaborated with senior engineers to design and implement robust, scalable embedded software solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                
+                <div class="education-item">
+                    <div class="edu-school">Norwegian University of Science and Technology (NTNU)</div>
+                    <div class="edu-degree">Master of Science (M.Sc.), Information Technology</div>
+                    <div class="edu-date">1997 - 2002</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="edu-school">Queensland University of Technology (QUT)</div>
+                    <div class="edu-degree">International Exchange Program, Information Technology</div>
+                    <div class="edu-date">2001</div>
+                </div>
+            </section>
+
+            <section class="patent-section">
+                <h2>Patents & Publications</h2>
+                <div class="patent-title">Endpoint Initiation of Multipart Conferences</div>
+                <div class="patent-number">United States Patent Application: US 20070223674 A1</div>
+            </section>
+
+            <section>
+                <h2>Languages</h2>
+                <div class="languages-grid">
+                    <div class="language-item">
+                        <span class="language-name">Norwegian:</span>
+                        <span class="language-level">Native</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">English:</span>
+                        <span class="language-level">Full Professional</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">Swedish:</span>
+                        <span class="language-level">Professional</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">Danish:</span>
+                        <span class="language-level">Professional</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">German:</span>
+                        <span class="language-level">Elementary</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Odd Arild Skaflestad | Generated from odd.skaflestad.no</p>
+        </footer>
+    </div>
+</body>
+</html>
+
