@@ -41,6 +41,7 @@ body {
     height: 320px;
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 .hero::before {
