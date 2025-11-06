@@ -255,6 +255,24 @@ main {
     margin-bottom: 1.5rem;
 }
 
+.company-header-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.company-logo {
+    height: 40px;
+    width: auto;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+    flex-shrink: 0;
+}
+
+.company-logo:hover {
+    opacity: 1;
+}
+
 .company {
     font-size: 1.8rem;
     color: var(--primary-color);
@@ -435,6 +453,14 @@ footer {
 
     .section-title {
         font-size: 1.6rem;
+    }
+
+    .company-logo {
+        height: 32px;
+    }
+
+    .company-header-content {
+        gap: 1rem;
     }
 
     .company {

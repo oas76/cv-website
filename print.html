@@ -139,6 +139,18 @@
             margin-bottom: 0.5rem;
         }
 
+        .company-with-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .company-logo-print {
+            height: 28px;
+            width: auto;
+            opacity: 0.9;
+        }
+
         .company {
             font-size: 13pt;
             font-weight: bold;
@@ -311,7 +323,10 @@
 
                 <div class="experience-item">
                     <div class="company-header">
-                        <span class="company">Cisco</span>
+                        <div class="company-with-logo">
+                            <img src="Cisco_logo_blue_2016.svg" alt="Cisco" class="company-logo-print">
+                            <span class="company">Cisco</span>
+                        </div>
                         <span class="duration">15 years 7 months</span>
                     </div>
 
@@ -373,7 +388,10 @@
 
                 <div class="experience-item">
                     <div class="company-header">
-                        <span class="company">TANDBERG</span>
+                        <div class="company-with-logo">
+                            <img src="Tandberg_logo.svg.png" alt="TANDBERG" class="company-logo-print">
+                            <span class="company">TANDBERG</span>
+                        </div>
                         <span class="duration">7 years 7 months</span>
                     </div>
 
