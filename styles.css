@@ -71,22 +71,27 @@ body {
     position: absolute;
     left: 0;
     top: 0;
+    bottom: 0;
     width: auto;
     height: 100%;
     z-index: 1;
+    line-height: 0;
 }
 
 .profile-image-wrapper {
     position: relative;
     width: auto;
     height: 100%;
+    line-height: 0;
 }
 
 .profile-image {
+    display: block;
     width: auto;
     height: 100%;
     object-fit: contain;
     object-position: left center;
+    vertical-align: bottom;
     mask-image: linear-gradient(to right, 
                                 black 0%, 
                                 black 30%,
