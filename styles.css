@@ -34,7 +34,7 @@ body {
 
 /* Header/Hero Section */
 .hero {
-    background: linear-gradient(135deg, #3a5a7c 0%, #5a7a9c 50%, #8ea8c3 100%);
+    background: linear-gradient(135deg, #4a6a8c 0%, #6a8aac 50%, #9eb8d3 100%);
     position: relative;
     overflow: hidden;
     color: white;
@@ -46,10 +46,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 15% 50%, rgba(142, 168, 195, 0.6) 0%, transparent 50%),
-                radial-gradient(circle at 85% 30%, rgba(90, 122, 156, 0.4) 0%, transparent 60%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, rgba(74, 106, 140, 0.7) 40%, rgba(106, 138, 172, 0.85) 100%);
     pointer-events: none;
     z-index: 2;
 }
@@ -59,46 +58,52 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 0;
     position: relative;
-    z-index: 3;
+    z-index: 1;
 }
 
 .profile-section {
     flex-shrink: 0;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 0;
-    opacity: 0.35;
+    position: relative;
+    width: 320px;
+    height: 280px;
+    z-index: 1;
 }
 
 .profile-image-wrapper {
     position: relative;
-    width: 280px;
-    height: 280px;
+    width: 100%;
+    height: 100%;
 }
 
 .profile-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    mask-image: radial-gradient(ellipse 120% 120% at 40% 50%, 
-                                black 15%, 
-                                rgba(0, 0, 0, 0.4) 35%, 
-                                transparent 65%);
-    -webkit-mask-image: radial-gradient(ellipse 120% 120% at 40% 50%, 
-                                        black 15%, 
-                                        rgba(0, 0, 0, 0.4) 35%, 
-                                        transparent 65%);
-    mix-blend-mode: soft-light;
-    filter: contrast(0.9) brightness(1.1);
+    object-position: center center;
+    mask-image: linear-gradient(to right, 
+                                black 0%, 
+                                black 30%,
+                                rgba(0, 0, 0, 0.6) 50%,
+                                rgba(0, 0, 0, 0.3) 70%,
+                                transparent 90%);
+    -webkit-mask-image: linear-gradient(to right, 
+                                        black 0%, 
+                                        black 30%,
+                                        rgba(0, 0, 0, 0.6) 50%,
+                                        rgba(0, 0, 0, 0.3) 70%,
+                                        transparent 90%);
+    mix-blend-mode: luminosity;
+    opacity: 0.5;
 }
 
 .hero-text {
     flex: 1;
     text-align: left;
+    padding-left: 3rem;
+    position: relative;
+    z-index: 3;
 }
 
 .hero-text h1 {
@@ -367,24 +372,40 @@ footer {
 
     .hero-content {
         flex-direction: column;
-        gap: 2rem;
-        text-align: center;
+        gap: 0;
     }
 
     .hero-text {
         text-align: center;
+        padding-left: 0;
+        padding-top: 2rem;
     }
 
     .profile-section {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0.25;
+        width: 100%;
+        height: 200px;
+        margin-top: -2rem;
     }
 
-    .profile-image-wrapper {
-        width: 220px;
-        height: 220px;
+    .profile-image {
+        mask-image: linear-gradient(to bottom, 
+                                    black 0%, 
+                                    black 20%,
+                                    rgba(0, 0, 0, 0.6) 40%,
+                                    rgba(0, 0, 0, 0.3) 60%,
+                                    transparent 80%);
+        -webkit-mask-image: linear-gradient(to bottom, 
+                                            black 0%, 
+                                            black 20%,
+                                            rgba(0, 0, 0, 0.6) 40%,
+                                            rgba(0, 0, 0, 0.3) 60%,
+                                            transparent 80%);
+        object-position: center top;
+        opacity: 0.3;
+    }
+
+    .hero::before {
+        background: linear-gradient(to bottom, transparent 0%, rgba(74, 106, 140, 0.6) 30%, rgba(106, 138, 172, 0.85) 100%);
     }
 
     .contact-links {
@@ -431,12 +452,12 @@ footer {
 
 @media (max-width: 480px) {
     .profile-section {
-        opacity: 0.2;
+        height: 160px;
+        margin-top: -1rem;
     }
 
-    .profile-image-wrapper {
-        width: 180px;
-        height: 180px;
+    .profile-image {
+        opacity: 0.25;
     }
 
     .hero-text h1 {
