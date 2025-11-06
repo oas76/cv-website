@@ -258,30 +258,24 @@ main {
 .company-header-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1.5rem;
 }
 
 .company-logo {
     max-height: 50px;
-    max-width: 120px;
+    max-width: 150px;
     height: auto;
     width: auto;
     opacity: 0.85;
     transition: opacity 0.3s ease;
     flex-shrink: 0;
     object-fit: contain;
+    cursor: help;
 }
 
 .company-logo:hover {
     opacity: 1;
-}
-
-.company {
-    font-size: 1.6rem;
-    color: var(--primary-color);
-    margin-bottom: 0.25rem;
-    font-weight: 600;
-    line-height: 1.2;
 }
 
 .duration {
@@ -461,15 +455,11 @@ footer {
 
     .company-logo {
         max-height: 40px;
-        max-width: 100px;
+        max-width: 120px;
     }
 
     .company-header-content {
         gap: 1rem;
-    }
-
-    .company {
-        font-size: 1.3rem;
     }
 
     .position-title {
